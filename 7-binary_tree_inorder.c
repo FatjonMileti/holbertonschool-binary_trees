@@ -1,9 +1,9 @@
-i#include <stdlib.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include "binary_trees.h"
 /**
- * binary_tree_preorder - function that goes through a binary tree
- * using pre-order traversal
+ * binary_tree_inorder - function that goes through a binary tree
+ * using in-order traversal
  * @tree: pointer to the root node of the tree to traverse
  * @func: pointer to a function to call for each node
  */
