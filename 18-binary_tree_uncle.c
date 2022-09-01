@@ -2,7 +2,9 @@
 #include <stdio.h>
 #include "binary_trees.h"
 /**
- *
+ * binary_tree_uncle - the function that finds the uncle of node
+ * @node: pointer to the node
+ * Return: NULL
  */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
