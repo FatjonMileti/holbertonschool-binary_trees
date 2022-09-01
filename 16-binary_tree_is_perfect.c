@@ -37,7 +37,10 @@ int binary_tree_balance(const binary_tree_t *tree)
 }
 
 /**
- *
+ * binary_tree_is_perfect - the function that checks
+ * if binary tree is perfect
+ * @tree: pointer to the root node of the tree check
+ * Return: 0
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
@@ -48,6 +51,7 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	if (binary_tree_balance(tree) != 0)
 		return (0);
 	if (tree->left != NULL && tree->right != NULL)
-		return ((binary_tree_is_perfect(tree->left)) && binary_tree_is_perfect(tree->right));
+		return ((binary_tree_is_perfect(tree->left))
+				&& binary_tree_is_perfect(tree->right));
 	return (0);
 }
